@@ -1,2 +1,26 @@
 # jenkinsfile
-pipeline
+pipeline{
+    agent any
+    stages{
+        stage("code pull"){
+            steps{
+                echo "code pull successfully"
+            }
+        }
+         stage("code build"){
+            steps{
+                echo "code build successfully"
+            }
+        }
+         stage("code test"){
+            steps{
+                echo "code test successfully"
+            }
+        }
+         stage("code deploy"){
+            steps{
+                echo "code deploy successfully"
+            }
+        }
+    }
+}
